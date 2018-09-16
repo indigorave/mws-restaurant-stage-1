@@ -208,13 +208,20 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
-if ('serviceWorker' in navigator){
-  navigator.serviceWorker.register('/sw.js').then(function(registration){
-    console.log('Service Worker registration succeeded:', registration);
-  })
-  (function(err){
-    console.log('Service Worker registration failed:', err);
-} else {
-  console.log('Service workers are not supported.');
-}
-);
+if (navigator.serviceWorker){
+  navigator.serviceWorker.register('./sw.js').then(function(){
+    console.log('Service Worker registration succeeded')
+  }).catch(function(){
+    console.log('Service Worker registration failed');
+});
+console.log('No existing service worker'))
+
+// //register service Worker
+// if(!navigator.serviceWorker) {
+//   console.log('no SW...')
+// };
+// navigator.serviceWorker.register('./sw.js').then(function(){
+//   console.log('registered!')
+// }).catch(function(){
+//   console.log('failed...')
+// })
