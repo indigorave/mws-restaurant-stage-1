@@ -11,7 +11,7 @@ body {
 	background-color: #fdfdfd;
 	margin: 0;
 	position:relative;
-	
+
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -207,7 +207,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -274,4 +274,62 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+/*mobile view*/
+@media screen and (max-width: 480px) {
+ #restaurants-list li {
+  width: 100%;
+ }
+ nav h1 a {
+  font-size: 12pt;
+ }
+}
+
+/*tablet*/
+@media screen and (max-width: 960px) and (min-width: 481px) {
+ #restaurants-list li {
+  width: 100%;
+ }
+ .inside #map-container {
+   background: blue none repeat scroll 0 0;
+   height: 87%;
+   position: fixed;
+   right: 0;
+   top: 80px;
+   width: 50%;
+ }
+ .inside #map {
+   background-color: #ccc;
+   height: 100%;
+   width: 100%;
+}
+
+/*desktop*/
+@media screen and (min-width: 961px) {
+  #restaurants-list li {
+    width: 25%;
+  }
+ .inside header {
+  position: fixed;
+ }
+  #breadcrumb {
+  width: calc(50% - 80px);
+ }
+.inside #map-container {
+  background: blue none repeat scroll 0 0;
+  height: 87%;
+  position: fixed;
+  right: 0;
+  top: 80px;
+  width: 50%;
+}
+.inside #map {
+  background-color: #ccc;
+  height: 100%;
+  width: 100%;
+}
+ #restaurant-container, #reviews-container {
+  width: 50%;
+  padding-top: 140px;
+ }
 }

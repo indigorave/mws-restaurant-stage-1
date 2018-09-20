@@ -209,19 +209,8 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 } */
 if (navigator.serviceWorker){
-  navigator.serviceWorker.register('./sw.js').then(function(){
+  navigator.serviceWorker.register('/sw.js').then(function(){
     console.log('Service Worker registration succeeded')
   }).catch(function(){
     console.log('Service Worker registration failed');
-});
-console.log('No existing service worker'))
-
-// //register service Worker
-// if(!navigator.serviceWorker) {
-//   console.log('no SW...')
-// };
-// navigator.serviceWorker.register('./sw.js').then(function(){
-//   console.log('registered!')
-// }).catch(function(){
-//   console.log('failed...')
-// })
+  })};
