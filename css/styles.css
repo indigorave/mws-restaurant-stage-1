@@ -160,7 +160,7 @@ nav h1 a {
   background-color: #fff;
   display: block;
   margin: 0;
-  max-width: 100%;
+  /* max-width: 100%; */
   min-height: 100%;
   min-width: 100%;
 	padding-top: 5%;
@@ -314,7 +314,17 @@ nav h1 a {
 	   width: 90%;
      bottom: 0;
      position: absolute;
-}
+		 }
+
+	 #restaurants-list .restaurant-img {
+		   background-color: #fff;
+		   display: block;
+		   margin: 0;
+		   max-width: 100%;
+		   min-height: 100%;
+		   min-width: 100%;
+		 	padding-top: 5%;
+		 }
 }
 
 /*Desktop View*/
@@ -361,5 +371,17 @@ nav h1 a {
 		 bottom: 0;
 		 position: absolute;
 		 width: 100%;
+	 }
+
+  #restaurants-list .restaurant-img {
+		   background-color: #fff;
+		   display: block;
+		   margin: 0;
+		   max-width: 1440px;
+		   min-height: 100%;
+		   min-width: 100%;
+		 	padding-top: 5%;
+		 }
+
 		}
 	}

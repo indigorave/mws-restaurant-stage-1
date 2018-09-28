@@ -159,6 +159,13 @@ static imgDescriptionForRestaurant(restaurant) {
   return (`${restaurant.imgdescription}`);
 }
 
+/**
+*Responsive Image
+**/
+static imageRespForRestaurant(restaurant) {
+  return (`${restaurant.imgresponsive}`);
+}
+
   /**
    * Map marker for a restaurant.
    */

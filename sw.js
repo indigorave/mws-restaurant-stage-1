@@ -1,4 +1,3 @@
-//create cache-1 while installing service worker
 self.addEventListener('install', function(event){
 	console.log('installing...');
 	event.waitUntil(
@@ -9,8 +8,7 @@ self.addEventListener('install', function(event){
 	)
 })
 
-//If a request doesn't match anything in the cache, get it from the network, send it to the page and add it to the cache at the same time.
-//reference: Caching Files with Service Worker, https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
+
 self.addEventListener('fetch', function(event){
 	console.log('fetching...');
 	event.respondWith(

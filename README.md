@@ -1,32 +1,42 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
 
-## Project Overview: Stage 1
+# FeedReeder Testing by Tracy Fussell
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+## Table of Contents
 
-### Specification
+* [Description](#description)
+* [Prerequisites](#prerequisites)
+* [Dependencies](#dependencies)
+* [Installing](#installing)
+* [Versioning](#versioning)
+* [Contributing](#contributing)
+* [Authors](#authors)
+* [Acknowledgements](#acknowledgements)
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+## Description
+This Restaurant Review app is part of the Grow with Google FrontEnd Nano degree program.  The app allows you to search for restaurants by neighborhood and cuisine. A list of restaurants is displayed that meet the filter criteria.  The user can click on the name of the restaurant in the list or click on the map marker.  The user is then taken to a restaurant detail page that includes the name of the restaurant, a representative   This site is responsive, accessible and designed with mobile-first principles in mind.  The site can also be accessed offline.
 
-### What do I do from here?
+## Prerequisites
+The code for this project is written in html, CSS, JSON and JavaScript.  It requires a browser that supports ES6 and allows the player's browser to run scripts. It also requires a text/code editor to modify the html, CSS, JSON and JavaScript files.
+Other prerequisites include:
+* Python installed (https://www.python.org/)
+* Leaflet.js (https://leafletjs.com)
+* MAPBOX(https://www.mapbox.com)  Note: You will need generate a token from mapbox to populate your API key.
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
+## Dependencies
+https://fonts.googleapis.com/css?family=Coda.
+https://unpkg.com/leaflet@1.3.1/dist/leaflet.css
 
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+## Installing
+This is a browser based app.  To use the run append on your machine, download the zip file from the github repository indigorave/mws-restaurant-stage-1.  Extract all the folders and files in to a folder.  Open a cmd window.  Go to the folder containing the index.html file.  Open the index.html file using your preferred browser. Start a simple server to serve up your webpage.  Open your browser and go to localhost:8000.  
 
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
+## Versioning
+Version 1.0
 
-## Leaflet.js and Mapbox:
+## Contributing
+As this project will become part of my portfolio, I will not be merging pull requests in to the project. Thank you for your understanding.
 
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
+## Authors
+Tracy Fussell
 
-### Note about ES6
-
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
-
-
-
+## Acknowledgements
+I would like to thank Forrest(FEND) my Udacity mentor. His tutoring was instrumental in helping me understand service workers.
