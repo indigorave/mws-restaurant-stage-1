@@ -1,39 +1,21 @@
-//Sets up event listner for successful installation of service worker, identify which files to cache
 self.addEventListener('install', function(event){
+	console.log('installing...');
 	event.waitUntil(
-		caches.open('cache-init').then(function(cache){
+		caches.open('cache-1').then(function(cache){
 			return cache.addAll([
-			 './'
-		])
-		}).then(function(){console.log('Static caches added!')})
+				'./'])
+		}).then(function(){console.log('added static caches!')})
 	)
 })
 
-//Removes old caches
-self.addEventListener('activate', function(event) {
-  event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.filter(function(cacheName) {
-          // Return true if you want to remove this cache,
-          // but remember that caches are shared across
-          // the whole origin
-        }).map(function(cacheName) {
-          return caches.delete(cacheName);
-        })
-      );
-    })
-  );
-});
 
-//Fetches content from cache-init when network is no longer available
 self.addEventListener('fetch', function(event){
-	console.log('Loading content');
+	console.log('fetching...');
 	event.respondWith(
-		caches.open('cache-init').then(function(cache){
+		caches.open('cache-1').then(function(cache){
 			return cache.match(event.request).then(function(response){
 				if(response) {
-					console.log('found in cache-init!')
+					console.log('found in cache-1!')
 					return response}
 				return fetch(event.request).then(function(fetchResponse){
 					console.log('new fetch!')
