@@ -1,5 +1,4 @@
-
-# FeedReeder Testing by Tracy Fussell
+# Restaurant Review App by Tracy Fussell
 
 ## Table of Contents
 
@@ -39,4 +38,4 @@ As this project will become part of my portfolio, I will not be merging pull req
 Tracy Fussell
 
 ## Acknowledgements
-I would like to thank Forrest(FEND) my Udacity mentor. His tutoring was instrumental in helping me understand service workers.
+I would like to thank Forrest(FEND) my Udacity mentor. His tutoring was instrumental in helping me understand service workers.  I also used https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker for creating my service worker.
